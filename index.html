@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="icon" href="img/logo-mobile.svg">
+  </head>
+<!-- Body -->
+<body>
+<!-- Header -->  
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img id="logo" src="../img/logo-mobile.svg" alt="logo-mobile"></a>
+        </div>
+        <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+        <nav class="menuppal">
+            <ul>
+              <li><a id="switchTheme" href="#">Modo Nocturno</a> <div class="linea"></div> </li>
+              <li><a href="favoritos.html">Favoritos</a><div class="linea"></div></li>
+              <li><a href="misgifos.html">Mis GIFOS</a><div class="linea"></div></li>
+              <li><a class="miGifo" href="upload.html"></a></li>
+              
+            </ul>
+          </nav>
+        </header>
+<!-- Main -->        
+          <main>
+            <section class="busqueda">
+              <div class="tittle">
+              <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span>
+              </h1>
+              </div>
+              <img id="ilustra" src="../img/ilustraheader.svg" alt="">
+              <div  id="busqueda" class="form">                
+                  <label for="search"></label>
+                  <div class="lupita">
+                    <img id="lupon" class="lupon" src="../assets/icon-search.svg" alt="">
+                  <input  id="inpu" class="input" type="search" id="search" name="fname" placeholder="Busca GIFOS y más">         
+                </div>
+              </div>              
+            </section>
+            <section class="parraf" id="trending" >
+              <h3 id="titleTrending" >Trending:</h3>
+              
+              <div class="parrafTrending" id="parrafTrending"></div>
+              <h2 style="display: none;" id="titleSearchs"></h2>
+              <div class="imagenes" id="imagenes">
+              
+              </div>
+            </section>
+            <div class="boton_ver_mas" id="boton_ver_mas" style="display:none;"><p class="ver_mas_p" >VER MAS</p></div>
+            <!-- MODAL -->
+			
+			<div class="modal" id="modal" style="display: none;" >
+				
+				<div class="cerrar_modal" id="cerrar_modal"></div>
+				
+				<!--<div class="boton_ampliar_izquierda" id="boton_ampliar_izquierda"></div>-->
+				<div class="contain_modal"> <img class="imagen_ampliada" id="imagen_ampliada" alt=""></div>
+				<div class="iconmodal">
+           <a class="fav" id="gustamodal"></a>
+           <a class="down" id="downmodal"></a>
+        </div>
+				<div class="usuario_modal" id="usuario_modal">usuers</div>
+				<div class="titulo_modal" id="titulo_modal"></div>
+			</div>
+
+<!-- TRENDING -->
+            <section class="GIFOS" >
+              <h2>Trending GIFOS</h2>
+              <p>Mirá los últimos GIFOS de nuestra comunidad.</p>
+              
+              <div class="carousel" id="carousel" >
+                <button id="left" ></button>
+                <div class="card" id="trend0" > <img class="giftrend" id="img0" src="" alt="" style="background: rgb(233, 55, 55);"><div class="overlay">
+                  <div class="titulo" id="tit0"></div>
+                  <div class="user" id="user0" ></div>
+                  <div class="iconos">
+                    <a href="" class="fav" id="favtrend0"></a>
+                    <a href="" class="down" id="downtrend0"></a>
+                    <a href="" class="amp" id="amptrend0"></a>
+                  </div>
+                </div></div>
+                <div class="card"id="trend1" ><img class="giftrend" id="img1" src="" alt="" style="background: violet;">
+                  <div class="overlay">
+                  <div class="titulo" id="tit1" ></div>
+                  <div class="user"  id="user1" ></div>
+                  <div class="iconos">
+                    <a href="" class="fav" id="favtrend1"></a>
+                    <a href="" class="down" id="downtrend1"></a>
+                    <a href="" class="amp" id="amptrend1" ></a>
+                  </div>
+                </div></div>
+                <div class="card" id="trend2"><img class="giftrend" id="img2" src="" alt="" style="background:yellowgreen green;"><div class="overlay" >
+                  <div class="titulo" id="tit2" ></div>
+                  <div class="user" id="user2" ></div>
+                  <div class="iconos">
+                    <a href="" class="fav" id="favtrend2"></a>
+                    <a href="" class="down" id="downtrend2"></a>
+                    <a href="" class="amp" id="amptrend2"></a>
+                  </div>
+                </div></div>
+                <button id="right"></button>             
+              </div>        
+            </section>
+          </main>
+<!-- Footer -->          
+    <footer>
+      <div class="contain_footer">
+      <div class="redes">
+        <p>Compartir en :</p>
+        <div class="iconitos">
+        <div class="contain_icon_face"></div>
+        <div class="contain_icon_instagram"></div>
+        <div class="contain_icon_twitter"></div>
+      </div>     
+      </div>
+      <div class="pie_footer">
+        <p>GIFOS 2021 All Rigth Reserved.</p>
+      </div>
+    </div>
+    </footer>
+ 
+   <script src="js/trending.js"></script>
+   <script src="js/search.js"></script>
+   <script src="js/modoNocturno.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gifos</title>
+  <link rel="stylesheet" href="css/styleup.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img id="logo" src="../img/logo-mobile.svg" alt="logo-mobile"></a>
+    </div>
+    <div class="hamburger">
+        <div class="_layer -top"></div>
+        <div class="_layer -mid"></div>
+        <div class="_layer -bottom"></div>
+    </div>
+    <nav class="menuppal">
+        <ul>
+          <li><a id="switchTheme" href="#">Modo Nocturno</a> <div class="linea"></div> </li>
+              <li><a href="favoritos.html">Favoritos</a><div class="linea"></div></li>
+              <li><a href="misgifos.html">Mis GIFOS</a><div class="linea"></div></li>
+              <li><a class="miGifo" href=""></a></li>          
+        </ul>
+      </nav>
+    </header>
+  <main>
+    
+         <section  class="videoasset">
+          <div class="camfull">
+           <div class="camrollo ">
+            <img  class="element-cinta1" id="element-cinta1" src="../assets/element_cinta1.svg" alt="">
+            <img  class="element-cinta2" id="element-cinta2" src="../assets/element_cinta2.svg" alt="">         
+        </div>
+        <img  id="element-camara" src="../assets/element-camara.svg" alt="">        
+        </div>
+        <img class="element-luz-camara" id="element-luz-camara" src="../assets/element-luz-camara.svg" alt=""> 
+        <div id="container">
+          
+          <div id="message" class="message">
+            <h4 id="titleVideo">Aquí podrás <br> crear tus propios <span id="gip" class="word">GIFOS</span></h4>
+            <p id="parrafVideo">¡Crea tu GIFO en sólo 3 pasos! (sólo necesitas una cámara para
+              grabar un video)</p>
+          </div>
+           <video id="video" src=""  style="display: none;" ></video>
+           <div class="preview"><img style="display: none;" id="gif" src="" alt="">
+            <div  id="overlay" class="overlay">
+              <div style="display: none;" id="icon" class="icon">
+                <a id="download" style="cursor:pointer" download="tuGifo.gif" href="" target="_blank" > <img  src="../assets/icon-download.svg" alt=""> </a> 
+                <a id="copy" style="cursor:pointer" href="misgifos.html" target="_blank"><img  src="../assets/icon-link-normal.svg" alt="">  </a>
+              </div>
+              <div  id="estado" class="estado">                
+                <img id="load" src="../assets/loader.svg" alt="">                
+                <p id="texto" >Estamos subiendo tu Gifo</p>
+              </div>
+              </div>
+            </div>           
+           </div>
+          
+           <img id="pelicula" class="pelicula" src="../assets/pelicula.svg" alt="">
+      </section>
+      <div class="pasos">
+        <div class="instrucciones">
+        <div class="numeros">
+          <span class="num" id="uno" >
+            <p>1</p>
+          </span class="num" >
+          <span class="num" id="dos" >
+            <p>2</p>
+          </span>
+          <span class="num" id="tres" >
+            <p>3</p>
+          </span>
+        </div>
+          <div  class="reloj">
+            <div   id="repetir" style="display:none;" class="repetir">REPETIR CAPTURA<a href=""></a></div>         
+            <div style="display:none;cursor:pointer;" class="reloj" id="reloj"></div>
+            <a href=""></a></div>
+            </div>              
+            <div class="line"></div>
+        </div>        
+      <div class="comenzar">
+        <button id="start" class="button" >Comenzar</button>
+      </div>
+  </main>
+  <footer>
+    
+    <div class="redes">
+      <p>Compartir en :</p>
+      <div class="iconitos">
+      <div class="contain_icon_face"></div>
+      <div class="contain_icon_instagram"></div>
+      <div class="contain_icon_twitter"></div>
+    </div>
+    </div>
+    <div class="pie_footer">
+      <p>GIFOS 2021 All Rigth Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+  <script src="js/video.js"></script>
+  <script src="js/modoNocturnoUp.js"></script>
+</body>
+
+</html>

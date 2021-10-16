@@ -1,0 +1,1526 @@
+html {
+  --nombreVariable: url("../assets/button-crear-gifo.svg");
+  --colorPrimario: #572ee5;
+  --colorNav: #572ee5;
+  --verMasHover: #ffffff;
+  --colorVerMas: #572ee5;
+  --anchoCard: "260px";
+  --altoCard: "200px";
+  --crearGifoHover: url("../assets/CTA-crear-gifo-hover.svg");
+  --textModal:#000000;
+  --close: url("../assets/close.svg")
+;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.darkMode {
+  background-color: #37383c;
+  color: #fff;
+}
+
+.darkMode header {
+  background-color: #37383c;
+}
+
+.darkMode header .menuppal {
+  background-color: transparent;
+  border: none;
+}
+
+.darkMode header .menuppal.is_active {
+  background-color: black;
+}
+
+.darkMode main {
+  padding-top: 100px;
+}
+
+.darkMode main .busqueda .form .lupita .input {
+  background-color: #37383c;
+}
+
+.darkMode main .GIFOS {
+  background-color: #222326;
+}
+
+body header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 1.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1000;
+}
+
+body header img {
+  width: 3rem;
+}
+
+body main {
+  padding-top: 100px;
+}
+
+body main section .tittle h1 {
+  width: 70%;
+  margin: auto;
+  padding: 0rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: var(--colorPrimario);
+  line-height: 2rem;
+  text-align: center;
+}
+
+body main section .tittle h1 span {
+  font-size: 25px;
+  color: #50e3c2;
+}
+
+body main section .form {
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 1px var(--colorPrimario);
+  border-radius: 27px;
+  z-index: 10;
+}
+
+body main section .form .input {
+  width: 80%;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #6b7989;
+  text-align: left;
+  margin: auto;
+  padding-left: 2px;
+  outline: none;
+  border: none;
+}
+
+body main section .form .sug {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #6b7989;
+  margin: auto;
+  padding-top: 8px;
+  padding-left: 2em;
+  padding-bottom: 0.6rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+body main .busqueda {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+}
+
+body main .busqueda #ilustra {
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+body main .busqueda .form {
+  width: 100%;
+}
+
+body main .busqueda .form .lupita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+body main .busqueda .form .lupita .lupon {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+body main .busqueda .form .lupita .input {
+  margin-left: 10px;
+  width: 80%;
+  opacity: 0.9;
+  background: var(--lupa) right no-repeat;
+}
+
+body main .busqueda .form .lupita .input:focus {
+  background: none;
+}
+
+body main .busqueda .form .lupita input::-webkit-search-decoration {
+  display: none;
+}
+
+body main .busqueda .form .lupita input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  background: var(--close) no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+body main .parraf {
+  margin-top: 30px;
+  margin-bottom: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .parraf .parrafTrending {
+  margin: auto;
+  padding: 1.2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .parraf .parrafTrending span {
+  color: var(--colorPrimario);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+body main .parraf h3 {
+  color: var(--colorPrimario);
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+body main .parraf p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: var(--colorPrimario);
+  line-height: 40px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+body main .parraf h2 {
+  border-top: 1px solid #9cafc3;
+  padding-top: 67px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: var(--colorPrimario);
+  text-align: center;
+  line-height: 30px;
+}
+
+body main .parraf .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .parraf .imagenes .cards {
+  width: 156px;
+  height: 120px;
+}
+
+body main .parraf .imagenes .divi {
+  position: relative;
+  margin-top: 1em;
+}
+
+body main .parraf .imagenes .divi .overlay:hover {
+  opacity: 1;
+}
+
+body main .parraf .imagenes .divi .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(87, 46, 229, 0.6);
+  /* Black see-through */
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main .parraf .imagenes .divi .overlay .titulo {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+body main .parraf .imagenes .divi .overlay .user {
+  color: white;
+  opacity: 1;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-left: 0.5em;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+  height: 32px;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .down {
+  background: url("../assets/icon-download.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .fav {
+  background: url("../assets/icon-fav.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .fav .imgfavs {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .amp {
+  background: url("../assets/icon-max-normal.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .down:hover {
+  background: url("../assets/icon-download-hover.svg") no-repeat;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .fav:hover {
+  background: url("../assets/icon-fav-hover.svg") no-repeat;
+}
+
+body main .parraf .imagenes .divi .overlay .iconos .amp:hover {
+  background: url("../assets/icon-max-hover.svg") no-repeat;
+}
+
+body main .parraf .imagenes .divi .overlay .estado {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  display: none;
+}
+
+body main .parraf .imagenes .divi .overlay .icon {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: none;
+}
+
+body main .parraf .imagenes .divi .overlay .icon #copy {
+  opacity: 0.7;
+}
+
+body main .parraf .imagenes .divi .overlay .icon #download {
+  opacity: 0.7;
+}
+
+body main .parraf .imagenes .divi .overlay .icon #copy:hover {
+  opacity: 1;
+}
+
+body main .parraf .imagenes .divi .overlay .icon #download:hover {
+  opacity: 1;
+}
+
+body main .parraf .imagenes #searchis {
+  margin-top: 1.5em;
+  width: 156px;
+  height: 120px;
+}
+
+body main .boton_ver_mas {
+  border: 1px solid var(--colorPrimario);
+  background: var(--verMas) no-repeat;
+  border-radius: 25px;
+  width: 127px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 2em;
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--colorPrimario);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+body main .ver_mas_p {
+  margin-top: 1.2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+body main .boton_ver_mas:hover {
+  border: 1px solid var(--verMasHover);
+  background: var(--verMasHover) no-repeat;
+  color: var(--verMasFuenteHover);
+}
+
+body main .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--verMas);
+  padding-top: 8em;
+}
+
+body main .modal .iconmodal {
+  position: absolute;
+  margin-left: 280px;
+  top: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .modal .iconmodal .down {
+  display: block;
+  background: url("../assets/icon-download.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .modal .iconmodal .fav {
+  display: block;
+  background: url("../assets/icon-fav.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .modal .cerrar_modal {
+  position: absolute;
+  right: 6%;
+  top: 100px;
+  background: var(--close) no-repeat;
+  width: 1em;
+  height: 1em;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+body main .modal .titulo_modal {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  left: 21px;
+  top: 405px;
+  color: var(--textModal);
+}
+
+body main .modal .usuario_modal {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  top: 390px;
+  left: 21px;
+  color: var(--textModal);
+}
+
+body main .modal .contain_modal {
+  margin: auto;
+  height: 245px;
+  width: 318px;
+}
+
+body main .modal .contain_modal .imagen_ampliada {
+  width: 100%;
+  height: 245px;
+  z-index: 2000;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+body main .GIFOS {
+  background: #f3f5f8;
+}
+
+body main .GIFOS h2 {
+  padding-top: 67px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: var(--colorPrimario);
+  text-align: center;
+  line-height: 30px;
+}
+
+body main .GIFOS p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.8em;
+}
+
+body main .GIFOS .carousel {
+  /* line them up horizontally */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(300px);
+      scroll-snap-points-x: repeat(300px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+body main .GIFOS .carousel .card {
+  width: 243px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin: 1rem;
+  padding: 0;
+}
+
+body main .GIFOS .carousel .card .overlay:hover {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .GIFOS .carousel .card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(87, 46, 229, 0.6);
+  /* Black see-through */
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main .GIFOS .carousel .card .overlay .titulo {
+  color: white;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+body main .GIFOS .carousel .card .overlay .user {
+  color: white;
+  opacity: 1;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-left: 0.5em;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+  height: 32px;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .down {
+  background: url("../assets/icon-download.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .fav {
+  background: url("../assets/icon-fav.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .fav .imgfavs {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .amp {
+  background: url("../assets/icon-max-normal.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .down:hover {
+  background: url("../assets/icon-download-hover.svg") no-repeat;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .fav:hover {
+  background: url("../assets/icon-fav-hover.svg") no-repeat;
+}
+
+body main .GIFOS .carousel .card .overlay .iconos .amp:hover {
+  background: url("../assets/icon-max-hover.svg") no-repeat;
+}
+
+body main .GIFOS .carousel .card .overlay .estado {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  display: none;
+}
+
+body main .GIFOS .carousel .card .overlay .icon {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: none;
+}
+
+body main .GIFOS .carousel .card .overlay .icon #copy {
+  opacity: 0.7;
+}
+
+body main .GIFOS .carousel .card .overlay .icon #download {
+  opacity: 0.7;
+}
+
+body main .GIFOS .carousel .card .overlay .icon #copy:hover {
+  opacity: 1;
+}
+
+body main .GIFOS .carousel .card .overlay .icon #download:hover {
+  opacity: 1;
+}
+
+body main .GIFOS .carousel .card .giftrend {
+  width: 243px;
+  height: 187px;
+  z-index: 100;
+}
+
+body main .GIFOS .carousel .card:hover .overlay {
+  opacity: 1;
+}
+
+body main .GIFOS .carousel #right {
+  display: none;
+  outline: none;
+}
+
+body main .GIFOS .carousel #right:hover {
+  background: url("../assets/Button-Slider-right-hover.svg") no-repeat;
+}
+
+body main .GIFOS .carousel #left {
+  display: none;
+}
+
+body main .GIFOS .carousel #left:hover {
+  background: url("../assets/button-slider-left-hover.svg") no-repeat;
+}
+
+body footer {
+  border-bottom: solid 5px #572ee5;
+}
+
+body footer .contain_footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 196px;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body footer .contain_footer .redes {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .contain_footer .redes .iconitos {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_face {
+  width: 20px;
+  margin-left: 8px;
+  height: 20px;
+  background: url("../assets/icon_facebook.svg") no-repeat;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_face:hover {
+  background: url("../assets/icon_facebook_hover.svg") no-repeat;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_instagram {
+  width: 20px;
+  margin-left: 6px;
+  height: 20px;
+  background: url("../assets/icon_instagram.svg") no-repeat;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_instagram:hover {
+  background: url("../assets/icon_instagram-hover.svg") no-repeat;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_twitter {
+  width: 20px;
+  margin-left: 10px;
+  height: 20px;
+  background: url("../assets/icon-twitter.svg") no-repeat;
+}
+
+body footer .contain_footer .redes .iconitos .contain_icon_twitter:hover {
+  background: url("../assets/icon-twitter-hover.svg") no-repeat;
+}
+
+.hamburger {
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  padding: 10px 0px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98), -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  z-index: 100;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamburger.is-active {
+  background-color: none;
+}
+
+._layer {
+  background: var(--colorPrimario);
+  margin-bottom: 4px;
+  border-radius: 2px;
+  width: 15px;
+  height: 3px;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger.is-active .-top {
+  -webkit-transform: translateY(230%) rotate(45deg) !important;
+          transform: translateY(230%) rotate(45deg) !important;
+}
+
+.hamburger.is-active .-mid {
+  opacity: 0;
+}
+
+.hamburger.is-active .-bottom {
+  -webkit-transform: translateY(-230%) rotate(135deg) !important;
+          transform: translateY(-230%) rotate(135deg) !important;
+}
+
+.menuppal.is_active {
+  -webkit-transform: translate3d(0px, 95px, 0px);
+          transform: translate3d(0px, 95px, 0px);
+  margin-top: -15px;
+}
+
+.menuppal {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--colorNav);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0px, -100%, 0px);
+          transform: translate3d(0px, -100%, 0px);
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s, -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  width: 100%;
+  z-index: 100;
+  color: white;
+}
+
+.menuppal ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menuppal ul li {
+  list-style: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 3em;
+  height: 3em;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.menuppal ul li .linea {
+  width: 41px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+}
+
+.menuppal ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.input:focus {
+  border: none;
+}
+
+.input:active {
+  border: none;
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+  .hamburger {
+    display: none;
+  }
+  .menuppal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    width: 100%;
+    color: rgba(87, 46, 229, 0.9);
+    -webkit-transform: none;
+            transform: none;
+    overflow: hidden;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menuppal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menuppal ul li {
+    margin-left: 2rem;
+  }
+  .menuppal ul li a {
+    font-size: 1rem;
+    line-height: 1em;
+    height: 1em;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#50e3c2), to(#50e3c2));
+    background-image: linear-gradient(#50e3c2, #50e3c2);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    -webkit-transition: background-size 0.3s;
+    transition: background-size 0.3s;
+  }
+  .menuppal ul li a:hover {
+    background-size: 100% 2px;
+  }
+  .menuppal ul li .miGifo {
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin-top: 10px;
+    background: var(--nombreVariable) no-repeat;
+  }
+  .menuppal ul li .miGifo:hover {
+    background: var(--crearGifoHover) no-repeat;
+  }
+  .imagenes {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 60%;
+  }
+  body header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.6em 5% 0.5em 5%;
+  }
+  body main .modal {
+    padding-top: 8em;
+  }
+  body main .modal .contain_modal {
+    margin: auto;
+    width: 600px;
+    height: 385px;
+  }
+  body main .modal .contain_modal .imagen_ampliada {
+    width: 100%;
+    height: 100%;
+  }
+  body main .modal .cerrar_modal {
+    right: 15%;
+    top: 50px;
+  }
+  body main .modal .usuario_modal {
+    top: 560px;
+    left: 320px;
+  }
+  body main .modal .titulo_modal {
+    top: 540px;
+    left: 320px;
+  }
+  body main .modal .iconmodal {
+    position: absolute;
+    margin-left: 960px;
+    top: 540px;
+  }
+  body main .busqueda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  body main .busqueda #ilustra {
+    max-width: 60%;
+    margin-top: 2em;
+  }
+  body main .busqueda .form {
+    width: 50%;
+  }
+  body main .busqueda .form .input {
+    width: 80%;
+  }
+  body main .busqueda .tittle h1 {
+    font-size: 32px;
+  }
+  body main .parraf #imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body main .parraf #imagenes .divi .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .parraf #imagenes .cards {
+    width: 260px;
+    height: 200px;
+  }
+  body main .parraf #imagenes #searchis {
+    margin-top: 1.5em;
+    width: 260px;
+    height: 200px;
+  }
+  body main .GIFOS {
+    background: #f3f5f8;
+  }
+  body main .GIFOS h2 {
+    padding-top: 67px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: var(--colorPrimario);
+    text-align: center;
+    line-height: 30px;
+  }
+  body main .GIFOS p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.8em;
+  }
+  body main .GIFOS .carousel {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .GIFOS .carousel .card {
+    width: 357px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    margin: 1rem;
+    padding: 0;
+  }
+  body main .GIFOS .carousel .card .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgba(87, 46, 229, 0.6);
+    /* Black see-through */
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  body main .GIFOS .carousel .card .giftrend {
+    width: 357px;
+    height: 275px;
+    z-index: 100;
+  }
+  body main .GIFOS .carousel .card:hover .overlay {
+    opacity: 1;
+  }
+  body main .GIFOS .carousel #right {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/Button-Slider-right.svg") no-repeat;
+    border: none;
+    padding: 10px;
+    outline: none;
+  }
+  body main .GIFOS .carousel #right:hover {
+    background: url("../assets/Button-Slider-right-hover.svg") no-repeat;
+  }
+  body main .GIFOS .carousel #left {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/button-slider-left.svg") no-repeat;
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    outline: none;
+  }
+  body main .GIFOS .carousel #left:hover {
+    background: url("../assets/button-slider-left-hover.svg") no-repeat;
+  }
+  body footer .contain_footer {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
+  body footer .contain_footer .redes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .contain_footer .redes .iconitos {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1920px) {
+  .hamburger {
+    display: none;
+  }
+  .menuppal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    width: 100%;
+    color: rgba(87, 46, 229, 0.9);
+    -webkit-transform: none;
+            transform: none;
+    overflow: hidden;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menuppal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menuppal ul li {
+    margin-left: 2rem;
+  }
+  .menuppal ul li a {
+    font-size: 1rem;
+    line-height: 1em;
+    height: 1em;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#50e3c2), to(#50e3c2));
+    background-image: linear-gradient(#50e3c2, #50e3c2);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    -webkit-transition: background-size 0.3s;
+    transition: background-size 0.3s;
+  }
+  .menuppal ul li a:hover {
+    background-size: 100% 2px;
+  }
+  .menuppal ul li .miGifo {
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin-top: 10px;
+    background: url("../assets/button-crear-gifo.svg") no-repeat;
+  }
+  .menuppal ul li .miGifo:hover {
+    background: url("../assets/CTA-crear-gifo-hover.svg") no-repeat;
+  }
+  .imagenes {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 60%;
+  }
+  .imagenes .cards {
+    width: 260px;
+    height: 200px;
+  }
+  body header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.8em 20% 0.8em 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 2000;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--verMas);
+    padding-top: 15em;
+  }
+  body main .modal .contain_modal {
+    margin: auto;
+    width: 600px;
+    height: 385px;
+  }
+  body main .modal .contain_modal .imagen_ampliada {
+    width: 100%;
+    height: 100%;
+  }
+  body main .modal .iconmodal {
+    position: absolute;
+    margin-left: 1240px;
+    top: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .modal .iconmodal .down {
+    display: block;
+    background: url("../assets/icon-download.svg") no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  body main .modal .iconmodal .fav {
+    display: block;
+    background: url("../assets/icon-fav.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  body main .modal .cerrar_modal {
+    position: absolute;
+    right: 15%;
+    top: 76px;
+    width: 1em;
+    height: 1em;
+    z-index: 2000;
+    cursor: pointer;
+  }
+  body main .modal .titulo_modal {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    left: 600px;
+    top: 660px;
+  }
+  body main .modal .usuario_modal {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    top: 640px;
+    left: 600px;
+  }
+  body main .modal .contain_modal {
+    margin: auto;
+    height: 385px;
+    width: 695px;
+  }
+  body main .modal .contain_modal .imagen_ampliada {
+    width: 100%;
+    height: 385px;
+    z-index: 2000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  body main .busqueda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  body main .busqueda .tittle h1 {
+    font-size: 32px;
+  }
+  body main .busqueda .tittle h1 span {
+    font-size: 32px;
+  }
+  body main .busqueda #ilustra {
+    max-width: 60%;
+    margin-top: 2em;
+  }
+  body main .busqueda .form {
+    width: 50%;
+  }
+  body main .busqueda .form .input {
+    width: 80%;
+  }
+  body main .parraf #imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body main .parraf #imagenes .divi .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .parraf #imagenes .cards {
+    width: 260px;
+    height: 200px;
+  }
+  body main .parraf #imagenes #searchis {
+    margin-top: 1.5em;
+    width: 260px;
+    height: 200px;
+  }
+  body main .GIFOS {
+    background: #f3f5f8;
+  }
+  body main .GIFOS h2 {
+    padding-top: 67px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: var(--colorPrimario);
+    text-align: center;
+    line-height: 30px;
+  }
+  body main .GIFOS p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.8em;
+  }
+  body main .GIFOS .carousel {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .GIFOS .carousel .card {
+    width: 357px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    margin: 1rem;
+    padding: 0;
+  }
+  body main .GIFOS .carousel .card .overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgba(87, 46, 229, 0.6);
+    /* Black see-through */
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  body main .GIFOS .carousel .card .giftrend {
+    width: 357px;
+    height: 275px;
+    z-index: 100;
+  }
+  body main .GIFOS .carousel .card:hover .overlay {
+    opacity: 1;
+  }
+  body main .GIFOS .carousel #right {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/Button-Slider-right.svg") no-repeat;
+    border: none;
+    padding: 10px;
+    outline: none;
+  }
+  body main .GIFOS .carousel #right:hover {
+    background: url("../assets/Button-Slider-right-hover.svg") no-repeat;
+  }
+  body main .GIFOS .carousel #left {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/button-slider-left.svg") no-repeat;
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    outline: none;
+  }
+  body main .GIFOS .carousel #left:hover {
+    background: url("../assets/button-slider-left-hover.svg") no-repeat;
+  }
+  body footer .contain_footer {
+    width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
+  body footer .contain_footer .redes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .contain_footer .redes .iconitos {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
