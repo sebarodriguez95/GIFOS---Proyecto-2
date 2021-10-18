@@ -1,7 +1,5 @@
-// Usar async y wait para una funcion asincrona que nos devuelve sugrencias de busqueda
-//
-//
-//let apiKey = "bw24LFlb3BXkhx9uB9goI91bEaW3Sm8H";
+
+//let apiKey = "AL2THPNTNm41IMtrDgXnqF0eYrqFo0XM";
 const $lupon = document.querySelector('#lupon');
 var vermas = 1;
 var cantGifs = 0;
@@ -24,7 +22,7 @@ const addToFav = (gif, username, title) => {
 	arrFavoriteGifs.push(objGif);
 	localStorage.setItem('FavoriteGifs', JSON.stringify(arrFavoriteGifs));	
 };
-///////////////////////VOy a cargar mi local storage////////////////////
+
 var record = JSON.parse(localStorage.getItem("favoritosLocal"));
 gustados = record;
 if (gustados == null) {
@@ -32,7 +30,7 @@ if (gustados == null) {
   
 }
 
-//////////////////////////////////////////////
+
 
 
 tags.addEventListener("input", () => {
@@ -79,7 +77,7 @@ tags.addEventListener("input", () => {
   }  
 });
 
-//////////////////////////////////
+
 
 const input = document.querySelector('input[type="search"]');
 var buscar = null;
@@ -102,7 +100,6 @@ function searchs() {
   }
   indice = 0;
 
-  /////
 
   fetch( `https://api.giphy.com/v1/gifs/search?q=${buscar}&api_key=${apiKey}&limit=50` )
     .then((response) => response.json())
